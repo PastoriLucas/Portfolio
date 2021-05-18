@@ -60,11 +60,13 @@
     color: #ffffff;
     text-align: center;
     padding-top: 6% ;
-    font-size: 40px;
+    font-size: 180%;
     letter-spacing: 8px;
   }
   #rectangles{
-    padding: 7%;
+
+    padding-top: 7%;
+    padding-bottom: 7%;
     display: flex;
   }
   .hr{
@@ -74,11 +76,10 @@
   }
   #rect1{
     flex: 1;
-    margin-right: 7%;
   }
   #rect2{
     flex: 1;
-    margin-right: 7%;
+
   }
   #rect3{
     flex: 1;
@@ -88,8 +89,8 @@
     margin-left: auto;
     margin-right: auto;
     height: 125px;
-    width: 250px;
-    font-size: 25px;
+    width: 50%;
+    font-size:  130%;
     font-family: Roboto, sans-serif;
     color: #f7f8fb;
     transition-delay: 10ms;
@@ -102,16 +103,16 @@
     margin-left: auto;
     margin-right: auto;
     color: rgba(0, 0, 0, 0);
-    transform: scale(2.0); /*Add this*/
+    transform: scale(1.5); /*Add this*/
     background-image :url("./../assets/projet_screen.png");
-    background-size: 250px 120px;
+    background-size: 100% 100%;
   }
   #buttonPortfolio{
     margin-left: auto;
     margin-right: auto;
     height: 125px;
-    width: 250px;
-    font-size: 25px;
+    width: 50%;
+    font-size:  130%;
     font-family: Roboto, sans-serif;
     background-color: #316a84;
     color: #f7f8fb;
@@ -124,17 +125,17 @@
     background-color: #316a84;
     box-shadow: 2px 0px 10px black;
     color: rgba(0, 0, 0, 0);
-    transform: scale(2.0); /*Add this*/
+    transform: scale(1.5); /*Add this*/
     background-image :url("./../assets/portfolio_scrren.png");
-    background-size: 250px 120px;
+    background-size: 100% 100%;
   }
   #buttonPresentation{
     margin-left: auto;
     margin-right: auto;
     flex: 1;
     height: 125px;
-    width: 250px;
-    font-size: 25px;
+    width: 50%;
+    font-size:  130%;
     font-family: Roboto, sans-serif;
     background-color: #072b43;
     color: #f7f8fb;
@@ -147,10 +148,10 @@
     flex: 1;
     background-color: #072b43;
     box-shadow: 2px 0px 10px black;
-    transform: scale(2.0); /*Add this*/
+    transform: scale(1.5); /*Add this*/
     color: rgba(0, 0, 0, 0);
     background-image :url("./../assets/presentation_screen.png");
-    background-size: 250px 120px;
+    background-size: 100% 100%;
   }
   #flecheNext{
     height: 70px;

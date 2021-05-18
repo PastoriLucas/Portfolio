@@ -35,7 +35,7 @@
           color="#316a84"
           border
         >
-          <a href="../assets/CV_Lucas_Pastori.pdf" target="_blank" download>CV</a>
+          <a href="/CV_Lucas_Pastori.pdf" download="">CV</a>
         </vs-button>
       </div>
     </div>

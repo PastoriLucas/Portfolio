@@ -180,7 +180,7 @@
               </tr>
           </table>
         </div>
-        <vs-dialog overflow-hidden full-screen v-model="actif1">
+        <vs-dialog overflow-hidden scroll full-screen v-model="actif1">
         <template #header>
           <h4 class="dialog-title">
             <b>Cyber security challenge</b>
@@ -207,16 +207,18 @@
             C'est vraiment une expérience enrichissante à laquelle on prend goût si on lui laisse une chance et qui nous a permis de resserrer les liens entre les membres de mon groupe.
 
           </p>
-          <div class="flex">
-            <vs-button class="preuve" @click="preuveCSC1=true">preuve 1</vs-button>
-            <vs-button class="preuve" @click="preuveCSC2=true">preuve 2</vs-button>
-            <vs-button class="preuve" @click="preuveCSC3=true">preuve 3</vs-button>
-          </div>
-
         </div>
+          <template #footer>
+            <div class="flex">
+              <vs-button class="preuve" @click="preuveCSC1=true">preuve 1</vs-button>
+              <vs-button class="preuve" @click="preuveCSC2=true">preuve 2</vs-button>
+              <vs-button class="preuve" @click="preuveCSC3=true">preuve 3</vs-button>
+            </div>
+
+          </template>
 
       </vs-dialog>
-        <vs-dialog overflow-hidden full-screen v-model="actif2">
+        <vs-dialog overflow-hidden scroll full-screen v-model="actif2">
           <template #header>
             <h4 class="dialog-title">
               <b>Lhoist</b>
@@ -235,11 +237,13 @@
               Celui-ci m'a aussi mieux fait comprendre comment marche une société ce qui peut s'avérer fortement utile dans le cadre professionnel en général.
             </p>
           </div>
-          <div class="flex">
-            <vs-button class="preuve" @click="preuveLhoist=true">preuve</vs-button>
-          </div>
+          <template #footer>
+            <div class="flex">
+              <vs-button class="preuve" @click="preuveLhoist=true">preuve</vs-button>
+            </div>
+          </template>
         </vs-dialog>
-        <vs-dialog overflow-hidden  full-screen v-model="actif3">
+        <vs-dialog overflow-hidden scroll  full-screen v-model="actif3">
           <template #header>
             <h4 class="dialog-title">
               <b>Formation Illustrator</b>
@@ -257,14 +261,15 @@
               Cette formation m'a rappelé des techniques de design intéressantes qui a mes yeux sont un gros plus pour les développeurs voulant se démarquer de la masse grâce a leur polyvalence.
             </p>
           </div>
-
-          <div class="flex">
-            <vs-button class="preuve" @click="preuveIlu1=true">preuve 1</vs-button>
-            <vs-button class="preuve" @click="preuveIlu2=true">preuve 2</vs-button>
-            <vs-button class="preuve" @click="preuveIlu3=true">preuve 3</vs-button>
-          </div>
+          <template #footer>
+            <div class="flex">
+              <vs-button class="preuve" @click="preuveIlu1=true">preuve 1</vs-button>
+              <vs-button class="preuve" @click="preuveIlu2=true">preuve 2</vs-button>
+              <vs-button class="preuve" @click="preuveIlu3=true">preuve 3</vs-button>
+            </div>
+          </template>
         </vs-dialog>
-        <vs-dialog overflow-hidden full-screen v-model="actif4">
+        <vs-dialog overflow-hidden scroll full-screen v-model="actif4">
           <template #header>
             <h4 class="dialog-title">
               <b>Formation NodeJs</b>
@@ -281,14 +286,15 @@
               Et fait réaliser l'existence des nombreux packages npm pouvant s'avérer extrêmement utile en nous évitant de réinventer la roue.
             </p>
           </div>
-          <div class="flex">
-            <vs-button class="preuve" @click="preuveNode1=true">preuve 1</vs-button>
-            <vs-button class="preuve" @click="preuveNode2=true">preuve 2</vs-button>
-            <vs-button class="preuve" @click="preuveNode3=true">preuve 3</vs-button>
-          </div>
-
+          <template #footer>
+            <div class="flex">
+              <vs-button class="preuve" @click="preuveNode1=true">preuve 1</vs-button>
+              <vs-button class="preuve" @click="preuveNode2=true">preuve 2</vs-button>
+              <vs-button class="preuve" @click="preuveNode3=true">preuve 3</vs-button>
+            </div>
+          </template>
         </vs-dialog>
-        <vs-dialog overflow-hidden full-screen v-model="actif5">
+        <vs-dialog overflow-hidden scroll full-screen v-model="actif5">
           <template #header>
             <h4 class="dialog-title">
               <b>Formation PHP / MySql</b>
@@ -307,14 +313,15 @@
               Cette formation m'a été utile car elle m'a fait découvrir un nouveau langage. Elle m'a également fait revoir les principes fondamentaux de la programmation avant mon stage ce qui m'a permis de me sentir un peu plus à l'aise.
             </p>
           </div>
-          <div class="flex">
-            <vs-button class="preuve" @click="preuvePHP1=true">preuve 1</vs-button>
-            <vs-button class="preuve" @click="preuvePHP2=true">preuve 2</vs-button>
-            <vs-button class="preuve" @click="preuvePHP3=true">preuve 3</vs-button>
-          </div>
-
+          <template #footer>
+            <div class="flex">
+              <vs-button class="preuve" @click="preuvePHP1=true">preuve 1</vs-button>
+              <vs-button class="preuve" @click="preuvePHP2=true">preuve 2</vs-button>
+              <vs-button class="preuve" @click="preuvePHP3=true">preuve 3</vs-button>
+            </div>
+          </template>
         </vs-dialog>
-        <vs-dialog overflow-hidden full-screen v-model="actif6" >
+        <vs-dialog overflow-hidden scroll full-screen v-model="actif6" >
           <template #header>
             <h4 class="dialog-title">
               <b>UTCTF 2021</b>
@@ -331,13 +338,15 @@
               Cette compétition en particulier m'a beaucoup fait pratiquer le "reverse engineering" dont le principe est d'analyser un code afin de trouver comment le modifier pour trouver un flag.
             </p>
           </div>
-          <div class="flex">
-            <vs-button class="preuve" @click="preuveUTCTF1=true">preuve 1</vs-button>
-            <vs-button class="preuve" @click="preuveUTCTF2=true">preuve 2</vs-button>
-          </div>
+          <template #footer>
+            <div class="flex">
+              <vs-button class="preuve" @click="preuveUTCTF1=true">preuve 1</vs-button>
+              <vs-button class="preuve" @click="preuveUTCTF2=true">preuve 2</vs-button>
+            </div>
+          </template>
         </vs-dialog>
 
-        <vs-dialog overflow-hidden full-screen v-model="actif7">
+        <vs-dialog overflow-hidden scroll full-screen v-model="actif7">
           <template #header>
             <h4 class="dialog-title">
               <b>Formation GIMP</b>
@@ -351,12 +360,14 @@
               Celle-ci repassait sur les grands points du logiciel et sur ce que l'on peut faire avec celui-ci.
             </p>
           </div>
-          <div class="flex">
-            <vs-button class="preuve" @click="preuveGIMP=true">preuve</vs-button>
-          </div>
+          <template #footer>
+            <div class="flex">
+              <vs-button class="preuve" @click="preuveGIMP=true">preuve</vs-button>
+            </div>
+          </template>
         </vs-dialog>
 
-          <vs-dialog overflow-hidden full-screen v-model="actif8">
+          <vs-dialog overflow-hidden scroll full-screen v-model="actif8">
             <template #header>
               <h4 class="dialog-title">
                 <b>RootMe</b>
@@ -482,7 +493,7 @@
     display: block;
     margin-right: auto;
     margin-left: auto;
-    height: 80px;
+    height: 50px;
     margin-bottom: 3%;
   }
   .dialog-title{
@@ -514,7 +525,7 @@
   .proof-img{
     display: block;
     margin: auto;
-    width: 800px;
+    width: 100%;
   }
   .total {
     font-weight: bold;
